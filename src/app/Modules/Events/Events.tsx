@@ -1,5 +1,5 @@
-import {Event} from "app/Modules/Events/Components/Event/Event";
-import {EEventSize, EEventType} from "app/Modules/Events/Models";
+import {Event} from "app/Modules/Events/Components/Event";
+import {EEventDataType, EEventSize, EEventType} from "app/Modules/Events/Models";
 import * as React from 'react';
 import {cn} from '@bem-react/classname';
 
@@ -17,7 +17,7 @@ const events = {
             "description": "Так держать! За последнюю неделю вы потратили на 10% меньше ресурсов, чем неделей ранее.",
             "icon": "stats",
             "data": {
-                "type": "graph",
+                "type": EEventDataType.GRAPH,
                 "values": [
                     {
                         "electricity": [
@@ -171,6 +171,6 @@ const events = {
 
 export const Events: React.SFC<{}> = () => (
     <div className={eventsClass()}>
-        {events.map(event => <Event {...event}/>)}
+        {events.map(event => <Event {...event} dataType={event.data && event.data.type}/>)}
     </div>
 );

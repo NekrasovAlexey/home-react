@@ -7,8 +7,13 @@ require('./Event.css');
 
 const cnEvent = cn('Event');
 
-export const Event: React.SFC<IEvent> = (props: IEvent) => (
-    <div className={cnEvent({type: props.type, size: props.size})}>
+interface IProps extends IEvent {
+    children: React.ReactNode;
+    className: string;
+}
+
+export const Event: React.SFC<IProps> = (props: IProps) => (
+    <div className={cnEvent({type: props.type, size: props.size}, [props.className])}>
         <div className={cnEvent('Header')}>
             <Icon className={cnEvent('Icon')} type={props.icon}/>
             <div className={cnEvent('Title')}>
@@ -28,7 +33,7 @@ export const Event: React.SFC<IEvent> = (props: IEvent) => (
                     {props.description}
                 </div>
                 <div className={cnEvent('Data')}>
-
+                    {props.children}
                 </div>
             </div>
         }

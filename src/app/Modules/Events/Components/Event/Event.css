@@ -22,11 +22,11 @@
         grid-column: auto / span 2;
     }
 
-    .Event_size_m-row {
+    .Event_rowSize_m {
         grid-row: auto / span 2;
     }
 
-    .Event_size_l-row {
+    .Event_rowSize_l {
         grid-row: auto / span 3;
     }
 }

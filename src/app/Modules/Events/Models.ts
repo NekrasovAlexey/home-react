@@ -9,6 +9,10 @@ export enum EEventSize {
     L = 'l'
 }
 
+export enum EEventDataType {
+    GRAPH = 'graph'
+}
+
 export interface IEvent {
     type: EEventType;
     title: string;
