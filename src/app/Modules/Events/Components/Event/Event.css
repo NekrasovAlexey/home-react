@@ -1,0 +1,120 @@
+.Event {
+    padding: 20px;
+    background: #FAFAFA;
+    border-radius: 20px;
+}
+
+.Event:hover {
+    background: #F3F3F3;
+    box-shadow: 0 2px 6px 0 rgba(197, 186, 186, .50);
+}
+
+@media (min-width: 1000px) {
+    .Event_size_l {
+        grid-column: auto / span 4;
+    }
+
+    .Event_size_m {
+        grid-column: auto / span 3;
+    }
+
+    .Event_size_s {
+        grid-column: auto / span 2;
+    }
+
+    .Event_size_m-row {
+        grid-row: auto / span 2;
+    }
+
+    .Event_size_l-row {
+        grid-row: auto / span 3;
+    }
+}
+
+.Event-Header {
+    display: grid;
+    grid-template-columns: 52px 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "icon title title"
+            "source source time";
+    font-size: 24px;
+    font-family: Arial-BoldMT;
+    grid-gap: 18px;
+}
+
+.Event_type_critical .Event-Header {
+    background: #DB5341;
+    margin: -20px;
+    padding: 20px 20px 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+}
+
+.Event_type_critical:hover .Event-Header {
+    background: #c35240;
+}
+
+.Event_size_s .Event-Header {
+    grid-template-areas:
+            "icon title title"
+            "source source source"
+            "time time time";
+}
+
+.Event__icon {
+    grid-area: icon;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.Event-Title {
+    grid-area: title;
+    display: inline-block;
+    align-self: center;
+}
+
+.Event-Source {
+    grid-area: source;
+    font-size: 18px;
+    font-family: ArialMT;
+}
+
+.Event-Time {
+    grid-area: time;
+    font-size: 18px;
+    font-family: ArialMT;
+    text-align: right;
+}
+
+.Event_size_s .Event-Time {
+    text-align: left;
+}
+
+.Event-Info {
+    margin-top: 20px;
+}
+
+.Event_type_critical .Event-Info {
+    margin-top: 0;
+}
+
+.Event-Description {
+    font-size: 20px;
+    margin: -20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.Event_size_l .Event-Description {
+    font-size: 24px;
+}
+
+.Event_type_critical .Event-Description {
+    background: #FAFAFA;
+}
+
+.Event_type_critical:hover .Event-Description {
+    background: #F3F3F3;
+}

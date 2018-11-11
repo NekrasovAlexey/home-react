@@ -1,0 +1,56 @@
+.Icon {
+    width: 52px;
+    height: 52px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Icon_type_list {
+    display: inline-block;
+    background-image: url('app/Common/Components/Icon/assets/icon_list.svg');
+}
+
+.Icon_type_stats {
+    background-image: url('app/Common/Components/Icon/assets/stats.svg');
+}
+
+.Icon_type_key {
+    background-image: url('app/Common/Components/Icon/assets/key.svg');
+}
+
+.Icon_type_robot-cleaner {
+    background-image: url('app/Common/Components/Icon/assets/robot-cleaner.svg');
+}
+
+.Icon_type_router {
+    background-image: url('app/Common/Components/Icon/assets/router.svg');
+}
+
+.Icon_type_thermal {
+    background-image: url('app/Common/Components/Icon/assets/thermal.svg');
+}
+
+.Icon_type_ac {
+    background-image: url('app/Common/Components/Icon/assets/air-conditioner.svg');
+}
+
+.Icon_type_music {
+    background-image: url('app/Common/Components/Icon/assets/music.svg');
+}
+
+.Icon_type_fridge {
+    background-image: url('app/Common/Components/Icon/assets/fridge.svg');
+}
+
+.Icon_type_battery {
+    background-image: url('app/Common/Components/Icon/assets/battery.svg');
+}
+
+.Icon_type_cam {
+    background-image: url('app/Common/Components/Icon/assets/cam-white.svg');
+}
+
+.Icon_type_kettle {
+    background-image: url('app/Common/Components/Icon/assets/kettle.svg');
+}

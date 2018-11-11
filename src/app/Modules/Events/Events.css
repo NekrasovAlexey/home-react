@@ -1,0 +1,7 @@
+.Events {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(130px, max-content));
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+}
