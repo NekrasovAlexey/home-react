@@ -10,7 +10,11 @@ export enum EEventSize {
 }
 
 export enum EEventDataType {
-    GRAPH = 'graph'
+    GRAPH = 'graph',
+    THERMAL = 'termal',
+    MUSIC = 'music',
+    BUTTONS = 'buttons',
+    IMAGE = 'image'
 }
 
 export interface IEvent {

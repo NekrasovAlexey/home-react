@@ -1,0 +1,9 @@
+.Event-Climate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #000;
+}
+
+.Climate-Value {
+    font-family: Arial-BoldMT;
+}

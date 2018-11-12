@@ -92,6 +92,7 @@ const events = {
             "icon": "thermal",
             "size": EEventSize.M,
             "data": {
+                "type": EEventDataType.THERMAL,
                 "temperature": 24,
                 "humidity": 80
             }
@@ -114,6 +115,7 @@ const events = {
             "icon": "music",
             "size": EEventSize.M,
             "data": {
+                "type": EEventDataType.MUSIC,
                 "albumcover": "https://avatars.yandex.net/get-music-content/193823/1820a43e.a.5517056-1/m1000x1000",
                 "artist": "Florence & The Machine",
                 "track": {
@@ -132,6 +134,7 @@ const events = {
             "icon": "fridge",
             "size": EEventSize.M,
             "data": {
+                "type": EEventDataType.BUTTONS,
                 "buttons": ["Да", "Нет"]
             }
         },
@@ -152,6 +155,7 @@ const events = {
             "description": "Робопылесос не смог сменить свое местоположение в течение последних 3 минут. Похоже, ему нужна помощь.",
             "icon": "cam",
             "data": {
+                "type": EEventDataType.IMAGE,
                 "image": "get_it_from_mocks.jpg"
             },
             "size": EEventSize.L
