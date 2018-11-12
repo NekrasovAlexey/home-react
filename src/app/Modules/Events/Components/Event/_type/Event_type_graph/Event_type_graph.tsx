@@ -9,7 +9,7 @@ const cnGraph = cn('Graph');
 const GraphEvent: ModBody<any> = (Base, props) => (
     <Base {...props}>
         <div className={cnEvent('Graph', [cnGraph()])}>
-            <img src="app/Modules/Events/Components/Event/_type/assets/graph.png" className={cnGraph('Image')}/>
+            <img src="app/Modules/Events/Components/Event/_type/Event_type_graph/assets/graph.png" className={cnGraph('Image')}/>
         </div>
     </Base>
 );

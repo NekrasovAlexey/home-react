@@ -7,3 +7,9 @@
     font-family: Arial-BoldMT;
     padding: 32px 0;
 }
+
+@media (max-width: 500px) {
+    .Main {
+        padding: 0;
+    }
+}
